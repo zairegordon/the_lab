@@ -1,0 +1,13 @@
+id,name,position,team,cost,projected_points
+1,QB A,QB,X,55,220
+2,QB B,QB,Y,50,210
+3,RB A,RB,X,70,190
+4,RB B,RB,Y,60,170
+5,RB C,RB,Z,45,150
+6,WR A,WR,X,65,180
+7,WR B,WR,Y,55,160
+8,WR C,WR,Z,40,130
+9,TE A,TE,X,35,95
+10,K A,K,Y,5,50
+11,DEF A,DEF,Z,5,45
+12,WR D,WR,X,30,110

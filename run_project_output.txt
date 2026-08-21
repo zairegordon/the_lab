@@ -1,0 +1,57 @@
+Working directory: C:\Users\zaire\fantasy_optimizer
+Python executable: C:\Users\zaire\fantasy_optimizer\.venv\Scripts\python.exe
+
+=== Install requirements ===
+Command: C:\Users\zaire\fantasy_optimizer\.venv\Scripts\python.exe -m pip install -r requirements.txt
+Return code: 0
+--- stdout ---
+Requirement already satisfied: pandas in .\.venv\Lib\site-packages (from -r requirements.txt (line 1)) (3.0.5)
+Requirement already satisfied: numpy in .\.venv\Lib\site-packages (from -r requirements.txt (line 2)) (2.5.1)
+Requirement already satisfied: requests in .\.venv\Lib\site-packages (from -r requirements.txt (line 3)) (2.34.2)
+Requirement already satisfied: pulp in .\.venv\Lib\site-packages (from -r requirements.txt (line 4)) (3.3.2)
+Requirement already satisfied: pytest in .\.venv\Lib\site-packages (from -r requirements.txt (line 5)) (9.1.1)
+Requirement already satisfied: python-dateutil>=2.8.2 in .\.venv\Lib\site-packages (from pandas->-r requirements.txt (line 1)) (2.9.0.post0)
+Requirement already satisfied: tzdata in .\.venv\Lib\site-packages (from pandas->-r requirements.txt (line 1)) (2026.3)
+Requirement already satisfied: charset_normalizer<4,>=2 in .\.venv\Lib\site-packages (from requests->-r requirements.txt (line 3)) (3.4.9)
+Requirement already satisfied: idna<4,>=2.5 in .\.venv\Lib\site-packages (from requests->-r requirements.txt (line 3)) (3.18)
+Requirement already satisfied: urllib3<3,>=1.26 in .\.venv\Lib\site-packages (from requests->-r requirements.txt (line 3)) (2.7.0)
+Requirement already satisfied: certifi>=2023.5.7 in .\.venv\Lib\site-packages (from requests->-r requirements.txt (line 3)) (2026.7.22)
+Requirement already satisfied: colorama>=0.4 in .\.venv\Lib\site-packages (from pytest->-r requirements.txt (line 5)) (0.4.6)
+Requirement already satisfied: iniconfig>=1.0.1 in .\.venv\Lib\site-packages (from pytest->-r requirements.txt (line 5)) (2.3.0)
+Requirement already satisfied: packaging>=22 in .\.venv\Lib\site-packages (from pytest->-r requirements.txt (line 5)) (26.3)
+Requirement already satisfied: pluggy<2,>=1.5 in .\.venv\Lib\site-packages (from pytest->-r requirements.txt (line 5)) (1.6.0)
+Requirement already satisfied: pygments>=2.7.2 in .\.venv\Lib\site-packages (from pytest->-r requirements.txt (line 5)) (2.20.0)
+Requirement already satisfied: six>=1.5 in .\.venv\Lib\site-packages (from python-dateutil>=2.8.2->pandas->-r requirements.txt (line 1)) (1.17.0)
+
+--- stderr ---
+
+
+=== Run tests ===
+Command: C:\Users\zaire\fantasy_optimizer\.venv\Scripts\python.exe -m pytest -q
+Return code: 0
+--- stdout ---
+.                                                                        [100%]
+1 passed in 16.38s
+
+--- stderr ---
+
+
+=== Run fantasy optimizer CLI ===
+Command: C:\Users\zaire\fantasy_optimizer\.venv\Scripts\python.exe -m src.fantasy_optimizer.cli --players players.csv --budget 500
+Return code: 0
+--- stdout ---
+Selected team:
+ id  name position team  cost  projected_points
+  1  QB A       QB    X    55               220
+  3  RB A       RB    X    70               190
+  4  RB B       RB    Y    60               170
+  6  WR A       WR    X    65               180
+  7  WR B       WR    Y    55               160
+  9  TE A       TE    X    35                95
+ 10   K A        K    Y     5                50
+ 11 DEF A      DEF    Z     5                45
+Remaining budget: 150.00
+
+--- stderr ---
+
+RUN_COMPLETE

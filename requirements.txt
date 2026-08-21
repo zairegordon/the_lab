@@ -1,0 +1,7 @@
+pandas
+numpy
+requests
+pulp  # optional: used for integer linear programming (solver)
+espn-api
+flask
+pytest
